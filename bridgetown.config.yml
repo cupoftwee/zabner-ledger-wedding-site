@@ -15,9 +15,22 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-baseurl: "" # OPTIONAL: the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+# TODO: Read from env to get this?
+baseurl: localhost:4000 # OPTIONAL: the subpath of your site, e.g. /blog
+url: localhost:4000 # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 
+defaults:
+  - scope:
+      path: /images
+    values:
+      image: true
+
+
 # timezone: America/Los_Angeles
+# Additional build settings go here
+
+# include: 
+#   - _pages
+#   - _redirects
