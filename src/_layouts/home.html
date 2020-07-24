@@ -1,7 +1,109 @@
 ---
 layout: default
+
 ---
+<!-- TODO: background not set here. Unsure how to fix that atm -->
+<section id="hero">
+  <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+    <!--Left Col-->
+    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+      <p class="uppercase tracking-loose">Witty Tagline</p>
 
-<h1>Home Page</h1>
+      <h1 class="my-4">My Super App</h1>
 
-{{ content }}
+      <p class="leading-normal mb-4">Enter your super app's description here... The key is to find the right length.  Don't want it to be too long, but then don't want it to be too short so that it looks weird between the title and button below.</p>
+
+      <button class="bg-transparent hover:bg-black text-black hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-black hover:border-transparent">Super Button</button>
+    </div>
+
+    <!--Right Col-->
+    <div class="w-full lg:w-1/2 lg:py-6 text-center">
+      <!--Add your product image here-->
+      <svg class="fill-current text-black w-3/5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 6V5h-2V2H3v14h5v4h3.25H11a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6zm-5.75 14H3a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5.75zM11 8v8h6V8h-6zm3 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-700 body-font bg-white">
+  <div class="container px-24 py-24 mx-auto flex flex-wrap">
+    <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Kickstarter Actually Pinterest Brunch Bitters Occupy</h2>
+
+    <div class="md:w-3/5 md:pl-6">
+      <p class="leading-relaxed text-base">Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion axe four dollar toast truffaut, direct trade kombucha brunch williamsburg keffiyeh gastropub tousled squid meh taiyaki drinking vinegar tacos.</p>
+
+      <div class="flex md:mt-4 mt-6">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+
+        <a class="text-indigo-500 inline-flex items-center ml-4">
+          Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="our-story-teaser" class="text-gray-700 body-font">
+  <div class="container p-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-10">
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+          The Bride's Story
+        </h2>
+
+        <hr class="pb-4" />
+
+        <div class="rounded-lg h-64 overflow-hidden pb-6">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/400x600">
+        </div>
+
+        <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
+
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div>
+
+      <div class="sm:w-1/2 mb-10 px-10">
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+          The Groom's Story
+        </h2>
+
+        <hr class="pb-4" />
+
+        <div class="rounded-lg h-64 overflow-hidden pb-6">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/400x600">
+        </div>
+
+        <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
+
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location-teaser" class="text-gray-700 body-font relative">
+  <div class="absolute inset-0 bg-gray-300">
+    <iframe 
+      style="pointer-events: none;filter: grayscale(1) contrast(1.2) opacity(0.4);" marginheight="0" marginwidth="0" 
+      title="map" 
+      scrolling="no" 
+      scrollwheel="false" 
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-91.47070884704591%2C41.7168364609664%2C-91.4634132385254%2C41.72124897151704&amp;layer=mapnik" width="100%" 
+      height="100%" 
+      frameborder="0"></iframe>
+  </div>
+  
+  <div class="container px-24 py-24 mx-auto flex">
+    <div class="md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:mr-auto w-full mt-10 md:mt-0 relative z-10">
+      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Location</h2>
+
+      <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe. Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion axe four dollar toast truffaut, direct trade kombucha brunch williamsburg keffiyeh gastropub tousled squid meh taiyaki drinking vinegar tacos.</p>
+
+
+
+      <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">See more of the Cidery</button>
+    </div>
+  </div>
+</section>
