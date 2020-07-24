@@ -26,6 +26,9 @@ vendor
 # Mac files
 .DS_Store
 
+# Windows files
+Cbinnodejsnpm-cache
+
 # Yarn
 yarn-error.log
 yarn-debug.log*
