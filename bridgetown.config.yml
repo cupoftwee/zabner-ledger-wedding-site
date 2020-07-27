@@ -16,7 +16,7 @@
 #
 
 # TODO: Read from env to get this?
-baseurl: localhost:4000 # OPTIONAL: the subpath of your site, e.g. /blog
+# baseurl:  # OPTIONAL: the subpath of your site, e.g. /blog
 url: localhost:4000 # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
