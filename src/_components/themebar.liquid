@@ -1,0 +1,88 @@
+
+<!-- Theme Customization Bar -->
+<script type="text/javascript">
+  function changeThemeClass(typeString, themeString) {
+    const bodyClassesArr = document.body.className.split(' ')
+    const themeTypeFilter = new RegExp(`${typeString}.*`)
+
+    bodyClassesArr.map((bc, i) => {
+      const themeTypeExists = themeTypeFilter.test(bc);
+
+      if (themeTypeExists) {
+        document.body.classList.remove(document.body.classList.item(i));
+      }
+
+      document.body.classList.add(`${typeString}__${themeString}`)
+    })
+  }
+</script>
+
+<section class="theme-bar">
+  <div class="container px-5 py-5 mx-auto bg-complement-lighter">
+    <h2 class="font-display text-tertiary-dark text-3xl pt-2 md:pl-20 md:mt-0 mt-10 mb-2 md:text-left">
+      Theme Customizations
+    </h2>
+    
+    <div class="flex-grow flex flex-wrap md:pl-20 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="font-labels text-tertiary-black font-medium tracking-widest text-xl">
+          Body Font
+        </h2>
+        <hr class="border-tertiary-darker mb-2" />
+        
+        <nav class="list-none mb-10">
+          <li>
+            <a type="button" onclick="changeThemeClass('type-body','tofino')" class="hover:text-tertiary-dark cursor-pointer">Tofino (Default)</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('type-body','fira')" class="thover:text-tertiary-dark cursor-pointer">Fira Sans</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('type-body','raleway')" class="hover:text-tertiary-dark cursor-pointer">Raleway</a>
+          </li>
+        </nav>
+      </div>
+  
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="font-labels text-tertiary-black font-medium tracking-widest text-xl">
+          Label Font
+        </h2>
+        <hr class="border-tertiary-darker mb-2" />
+  
+        <nav class="list-none mb-10">
+          <li>
+            <a type="button" onclick="changeThemeClass('type-labels', 'quaver')" class="hover:text-tertiary-dark cursor-pointer">Quaver Serif (default)</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('type-labels', 'cormorant')" class="hover:text-tertiary-dark cursor-pointer">Cormorant Garamond</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('type-labels', 'ovo')" class="hover:text-tertiary-dark cursor-pointer">Ovo</a>
+          </li>
+        </nav>
+      </div>
+  
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="font-labels text-tertiary-black font-medium tracking-widest text-xl">
+          Color Palettes
+        </h2>
+        <hr class="border-tertiary-darker mb-2" />
+  
+        <nav class="list-none mb-10">
+          <li>
+            <a type="button" onclick="changeThemeClass('theme-palette', 'summer-evening__light')" class="hover:text-tertiary-dark cursor-pointer">Summer Evening - Light (Default)</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('theme-palette','summer-evening__dark')" class="hover:text-tertiary-dark cursor-pointer">Summer Evening - Dark</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('theme-palette', 'vineyard-harvest__light')" class="hover:text-tertiary-dark cursor-pointer">Vineyard Harvest - Light</a>
+          </li>
+          <li>
+            <a type="button" onclick="changeThemeClass('theme-palette', 'vineyard-harvest__dark')" class="hover:text-tertiary-dark cursor-pointer">Vineyard Harvest - Dark</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

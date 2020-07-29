@@ -34,6 +34,7 @@
     "webpack-manifest-plugin": "^2.2.0"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "tailwindcss-theme-swapper": "crswll/tailwindcss-theme-swapper"
   }
 }

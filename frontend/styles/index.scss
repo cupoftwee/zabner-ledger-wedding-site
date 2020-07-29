@@ -1,3 +1,54 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+
 @import 'tailwindcss/utilities';
+
+@import './_fonts.scss';
+
+.bg-hero {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  @apply text-primary-lighter;
+  display: block;
+  position: relative;
+}
+.bg-hero::before {
+  content: "";
+  @apply bg-primary-darkest;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2; 
+}
+.bg-hero::after {
+  content: "";
+  background: url('/images/dande-cute-lake-hug.jpg') no-repeat center center fixed;
+  opacity: .3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+h1, h2 {
+  @apply font-labels;
+}
+
+h3, h4 {
+  @apply font-display;
+}
+
+h5, h6 {
+  @apply font-body font-bold;
+}
+
+p, button, a, span {
+  @apply font-body font-normal;
+}
