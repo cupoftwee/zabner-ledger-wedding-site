@@ -37,6 +37,17 @@
   z-index: -1;   
 }
 
+.location.bg-hero::after {
+  background: url('/images/rapid-creek-barn-through-blossoms.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.schedule.bg-hero::after {
+  background: url('/images/rapid-creek-dining-spread.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: .2;
+}
+
 h1, h2 {
   @apply font-labels;
 }
