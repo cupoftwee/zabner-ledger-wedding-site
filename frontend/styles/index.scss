@@ -20,7 +20,7 @@ $mobileMenuIconActive: #f5f2f8;/* primary white from tailwing.config.js */
     fill: $mobileMenuIcon;
   }
   
-  &::hover {
+  &:hover {
     rect { fill: $mobileMenuIconActive; }
   }
   &.active {
@@ -75,6 +75,27 @@ $mobileMenuIconActive: #f5f2f8;/* primary white from tailwing.config.js */
   background: url('/images/rapid-creek-dining-spread.jpg') no-repeat center center fixed;
   background-size: cover;
   opacity: .2;
+}
+
+.hero-title {
+  @apply flex justify-center;
+}
+.hero-title h1 {
+  @apply mt-4 font-labels text-6xl;
+  line-height: 0.8;
+}
+@screen md {
+  .hero-title h1 { 
+    @apply text-6xl; 
+    line-height: 0.9;
+  }
+}
+@screen xl {
+  .hero-title h1 { 
+    font-size: 8rem;
+    line-height: 1;
+    line-height: 1;
+  }
 }
 
 h1, h2 {
