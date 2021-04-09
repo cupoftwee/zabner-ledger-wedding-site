@@ -81,12 +81,11 @@ $mobileMenuIconActive: #f5f2f8;/* primary white from tailwing.config.js */
   @apply flex justify-center;
 }
 .hero-title h1 {
-  @apply mt-4 font-labels text-6xl;
+  @apply mt-4 font-labels;
   line-height: 0.8;
 }
 @screen md {
   .hero-title h1 { 
-    @apply text-6xl; 
     line-height: 0.9;
   }
 }
@@ -113,3 +112,32 @@ h5, h6 {
 p, button, a, span {
   @apply font-body font-normal;
 }
+
+.date-icon {
+  @apply inline-block py-2 px-4 mr-4 bg-secondary-lightest rounded;
+  align-self: start;
+  
+  
+  .date-icon-month {
+    text-transform: uppercase;
+    @apply block text-xl font-display;
+    font-weight: bold;
+    line-height: 0.85;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .date-icon-day {
+    @apply text-4xl block font-labels;
+    line-height: 0.85;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
