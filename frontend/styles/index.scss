@@ -5,6 +5,29 @@
 
 @import './_fonts.scss';
 
+
+/* mobile menu */
+$mobileMenuIcon: #bba7cc;/* primary light from tailwing.config.js */
+$mobileMenuIconActive: #f5f2f8;/* primary white from tailwing.config.js */
+
+.active {
+  display: block;
+}
+#mobile-menu-icon {
+  cursor: pointer;
+  
+  rect {
+    fill: $mobileMenuIcon;
+  }
+  
+  &::hover {
+    rect { fill: $mobileMenuIconActive; }
+  }
+  &.active {
+    rect { fill: $mobileMenuIconActive; }
+  }
+}
+
 .bg-hero {
   -webkit-background-size: cover;
   -moz-background-size: cover;
