@@ -133,6 +133,32 @@ p, button, a, span {
   }
 }
 
+.hotel-list {
+  display: flex;
+}
+.hotel-list > .hotel-card {
+  flex: 50%;
+}
+
+.hotel-card {
+  width: 100%;
+  @apply bg-primary-white flex justify-between p-2 border-primary m-2;
+  
+  .hotel-photo {
+    img {
+      @apply bg-primary-white;
+    }
+  }
+  
+  .hotel-details {
+    
+  }
+  
+  .hotel-card-btn {
+    @apply bg-primary-dark px-2 py-1 rounded;
+  }
+}
+
 
 
 
