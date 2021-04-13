@@ -3,10 +3,10 @@
     <div class="flex justify-between title-font font-medium text-primary-white md:mb-0">
       <a href="/" class="flex items-center">
         <img class="w-10 rounded-full" src="{{site.baseurl}}/images/placeholder-logo_200x200.png" alt="">
-  
+
         <span class="ml-3 text-lg font-labels">Emily & David's Wedding</span>
       </a>
-      
+
       <div id="mobile-menu-button" class="md:hidden">
         <svg id="mobile-menu-icon" viewBox="0 0 100 80" width="40" height="40">
           <rect width="100" height="15" rx="8"></rect>
@@ -19,30 +19,31 @@
     <nav id="menu-drawer" class="invisible md:visible hidden md:block md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a href="/" class="mr-5 hover:text-primary-white">Home</a>
       <a href="/our-story" class="mr-4 hover:text-primary-white">Our Story</a>
-      <a href="/schedule" class="mr-4 hover:text-primary-white">Schedule</a>
+      <!-- <a href="/schedule" class="mr-4 hover:text-primary-white">Schedule</a> -->
+      <a href="/registry" class="mr-4 hover:text-primary-white">Registry</a>
       <a href="/location" class="mr-4 hover:text-primary-white">Location</a>
       <button class="inline-flex items-center bg-primary-darker border-0 py-1 px-3 focus:outline-none hover:bg-primary-dark rounded text-base">
         <a href="https://forms.gle/6zSq28aKcvZcRwmp8" target="_blank">RSVP</a>
-  
+
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
       </button>
     </nav>
 
-    
+
   </div>
-  
+
   <script>
     const menuButton = document.getElementById('mobile-menu-button');
     const menuDrawer = document.getElementById('menu-drawer');
     const menuClickHandler = () => {
       menuButton.classList.toggle('active');
-      
+
       menuDrawer.classList.toggle('invisible');
       menuDrawer.classList.toggle('hidden');
     };
-  
+
     menuButton.addEventListener('click', menuClickHandler);
   </script>
 </header>
