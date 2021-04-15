@@ -1,11 +1,11 @@
 # David & Emily's Wedding Website
 
-A static website built with [Bridgetown](https://www.bridgetownrb.com/), [PostCSS](https://postcss.org/), and [Tailwind CSS](https://tailwindcss.com/).
+A static website built with [Bridgetown](https://www.bridgetownrb.com/), [PostCSS](https://postcss.org/), and [Tailwind CSS](https://tailwindcss.com/). Mazel tov, you two <3
 
 ### Dependencies & Setup
-In order to run the Bridgetown CLI locally, you'll need to [install it as the docs specify](https://www.bridgetownrb.com/docs/installation). If you have all the dependencies (GCC, Make, Ruby >= 2.5, Node >= 10.3, and Yarn at time of writing), you should be able to run `gem install bridgetown -N` successfully. 
+In order to run the Bridgetown CLI locally, you'll need to [install it as the docs specify](https://www.bridgetownrb.com/docs/installation). If you have all the dependencies (GCC, Make, Ruby >= 2.5, Node >= 10.3, and Yarn, at time of writing), you should be able to run `gem install bridgetown -N` successfully. 
 
-I'm still relatively new with Bridgetown, however, I believe in most cases you should be able to run the below steps to clone and run the website locally:
+From there, you should be able to do the following steps to: install & set up the website
 ```bash
 # 1) clone the repo
 $ git clone https://github.com/cupoftwee/zabner-ledger-wedding-site.git
@@ -16,6 +16,9 @@ $ yarn install
 # 4) Run a local dev server on http://localhost:4000
 $ yarn start
 ```
+
+### Deployment
+Any commits to Github on the `primary` branch will be automatically deployed to [zabner-wedding.netlify.app](https://zabner-wedding.netlify.app).
 
 
 ### Directory Structure
