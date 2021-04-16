@@ -96,6 +96,9 @@ $mobileMenuIconActive: #f5f2f8;/* primary white from tailwing.config.js */
     line-height: 1;
   }
 }
+.hero-subtitle {
+  @apply font-display text-center text-2xl uppercase tracking-widest;
+}
 
 h1, h2 {
   @apply font-labels;
@@ -134,31 +137,72 @@ p, button, a, span {
 }
 
 .hotel-list {
-  display: flex;
+  @apply flex flex-col items-start content-start py-8;
+  
+  .hotel-card {
+    @apply w-1/2 flex-1 ml-0;
+  }
 }
-.hotel-list > .hotel-card {
-  flex: 50%;
+
+@screen md {
+  .hotel-list {
+    @apply flex flex-wrap items-start content-start py-8;
+    
+    .hotel-card {
+      @apply w-1/2 flex-1;
+      
+      .hotel-photo img {
+        width: 150px;
+        max-width: 150px;
+      }
+      
+    }
+  }
 }
 
 .hotel-card {
-  width: 100%;
-  @apply flex justify-between p-2 border-primary m-2;
+  line-height: 1.1;
+  @apply flex justify-between p-2 border-primary-dark rounded m-2;
+  
+  &:last-child {
+    flex-grow: 0;
+  }
   
   .hotel-photo {
     width: max-content;
     
     img {
-      width: 8rem;
-      @apply p-2 rounded bg-primary-white;
+      width: 75px;
+      max-width: 75px;
+      @apply p-2 mr-4 rounded bg-primary-white;
     }
   }
   
-  .hotel-details {
+  .hotel-details { 
+    @apply text-xs;
     
-  }
+    .hotel-name {
+      @apply text-sm;
+      font-weight: 600;
+    }
+    .hotel-name-2 {
+      @apply text-sm;
+    }
+    .hotel-address {}
+   }
   
   .hotel-card-btn {
-    @apply bg-primary-dark px-2 py-1 rounded;
+    cursor: pointer;
+    min-width: max-content;
+    @apply bg-primary-dark text-primary-lighter px-2 py-1 mr-2 mt-4 rounded;
+    
+    &:last-child {
+      @apply mr-0;
+    }
+    
+    &:hover {
+      @apply bg-primary-light text-primary-darker;
+    }
   }
 }
 
